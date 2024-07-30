@@ -15,7 +15,6 @@
     rouxinold-bot = config.services.rouxinold-bot;
   in {
     systemd.services.rouxinold-bot = mkIf rouxinold-bot.enable {
-      name = "rouxinold-bot";
       wants = [ "network.target" ];
       wantedBy = [ "multi-user.target" ];
       enable = true;
