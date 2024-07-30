@@ -33,6 +33,7 @@
     users.users.rouxinold = {
       name = "rouxinold";
       group = "rouxinold";
+      isNormalUser = true;
     };
     users.groups.rouxinold = {};
 
