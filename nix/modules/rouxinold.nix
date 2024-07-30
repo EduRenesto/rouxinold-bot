@@ -1,5 +1,6 @@
 { lib
 , pkgs
+, config
 , ...
 }: with lib; {
   options.services.rouxinold-bot = {
