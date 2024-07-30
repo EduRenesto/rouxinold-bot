@@ -22,6 +22,8 @@
       src = craneLibs.cleanCargoSource ./.;
       buildInputs = with pkgs; [
         oci-cli
+        openssl
+        pkg-config
       ];
     };
 
