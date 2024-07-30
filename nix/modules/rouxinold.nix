@@ -34,6 +34,7 @@
       name = "rouxinold";
       group = "rouxinold";
     };
+    users.groups.rouxinold = {};
 
     environment.systemPackages = with pkgs; [
       oci-cli
