@@ -20,7 +20,7 @@
       enable = true;
       environment = {
         "ROUXINOLD_ENV_FILE" = rouxinold-bot.envFile;
-        "PATH" = "/run/current-system/sw/bin";
+        "ROUXINOLD_OCI_CLI_PATH" = "${pkgs.oci-cli}/bin/oci";
       };
       serviceConfig = {
         ExecStart = "${pkgs.rouxinold-bot}/bin/rouxinold-bot";

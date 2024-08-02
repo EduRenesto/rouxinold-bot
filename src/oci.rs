@@ -4,7 +4,9 @@ use color_eyre::eyre::eyre;
 use tokio::process::Command;
 
 pub async fn start_instance(id: &str) -> Result<()> {
-    let out = Command::new("oci")
+    let cmd_path = std::env::var("ROUXINOLD_OCI_CLI_PATH")?;
+
+    let out = Command::new(cmd_path)
         .arg("compute")
         .arg("instance")
         .arg("action")
