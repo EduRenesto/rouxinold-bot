@@ -20,6 +20,7 @@
       enable = true;
       environment = {
         "ROUXINOLD_ENV_FILE" = rouxinold-bot.envFile;
+        "PATH" = "/run/current-system/sw/bin";
       };
       serviceConfig = {
         ExecStart = "${pkgs.rouxinold-bot}/bin/rouxinold-bot";
