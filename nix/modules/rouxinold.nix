@@ -23,7 +23,7 @@
         "ROUXINOLD_OCI_CLI_PATH" = "${pkgs.oci-cli}/bin/oci";
       };
       serviceConfig = {
-        ExecStart = "${pkgs.bash}/bin/bash -c '${pkgs.rouxinold-bot}/bin/rouxinold-bot'";
+        ExecStart = "${pkgs.rouxinold-bot}/bin/rouxinold-bot";
         Restart = "always";
         User = "rouxinold";
         Group = "rouxinold";
